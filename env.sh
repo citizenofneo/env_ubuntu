@@ -1,4 +1,3 @@
-#!/bin/bash
 sudo apt update
 sudo apt install git
 sudo apt install curl
@@ -8,7 +7,8 @@ sudo apt-get install -y nodejs
 sudo npm i -g pm2
 sudo apt install software-properties-common
 sudo apt-add-repository ppa:nginx/stable
+# 2й раз запустить то что ниже 
 sudo apt update
 sudo apt install nginx
-systemctl start nginx
-exit
+sudo systemctl start nginx
+pm2 startup
