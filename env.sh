@@ -1,5 +1,6 @@
 apt-get install sudo
 sudo apt update
+apt upgrade 
 sudo apt install git
 sudo apt install curl
 sudo apt install policykit-1
