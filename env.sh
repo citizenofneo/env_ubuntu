@@ -12,5 +12,6 @@ sudo apt-add-repository ppa:nginx/stable -y
 # 2й раз запустить то что ниже 
 sudo apt update
 sudo apt install nginx -y
+sudo apt install fail2ban -y
 sudo systemctl start nginx
 pm2 startup
