@@ -1,15 +1,15 @@
-создать юзера
+#создать юзера
 adduser username
-дать судори
+#дать судори
 usermod -aG sudo username
 
 
-закинуть ключи
+#закинуть ключи
 ssh-copy-id username@remote_host
 
-блочим вход по паролю
-/etc/ssh/sshd_config 
+#блочим вход по паролю
+cd /etc/ssh/sshd_config 
 PasswordAuthentication no
 ChallengeResponseAuthentication no
- Перезапуск ссх
+#Перезапуск ссх
  sudo service ssh restart
