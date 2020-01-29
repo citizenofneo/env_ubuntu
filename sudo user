@@ -1,5 +1,13 @@
+создать юзера
 adduser username
+дать судори
 usermod -aG sudo username
 
 
+закинуть ключи
 ssh-copy-id username@remote_host
+
+блочим вход по паролю
+/etc/ssh/sshd_config 
+PasswordAuthentication no
+ChallengeResponseAuthentication no
