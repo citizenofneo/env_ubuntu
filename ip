@@ -17,6 +17,8 @@ netmask 255.255.255.0
 
 
 
-
+запустить:
 ifconfig eth0:0 45.128.185.213 up
+убить:
+ifconfig eth0:0 down
 /etc/init.d/networking restart
