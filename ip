@@ -1,0 +1,22 @@
+sudo nano /etc/network/interfaces
+
+allow-hotplug eth0
+iface eth0 inet static
+        address 45.128.185.105/24
+        gateway 45.128.185.1
+        # dns-* options are implemented by the resolvconf package, if installed
+        dns-nameservers 8.8.8.8 8.8.4.4
+        dns-search mgn-host.ru
+
+# добавляем ip ^^
+auto eth0:0
+iface eth0:0 inet static
+address 45.128.185.213
+gateway 45.128.185.1
+netmask 255.255.255.0
+
+
+
+
+ifconfig eth0:0 45.128.185.213 up
+/etc/init.d/networking restart
