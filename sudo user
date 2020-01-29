@@ -1,2 +1,5 @@
 adduser username
 usermod -aG sudo username
+
+
+ssh-copy-id username@remote_host
