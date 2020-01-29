@@ -11,3 +11,5 @@ ssh-copy-id username@remote_host
 /etc/ssh/sshd_config 
 PasswordAuthentication no
 ChallengeResponseAuthentication no
+ Перезапуск ссх
+ sudo service ssh restart
