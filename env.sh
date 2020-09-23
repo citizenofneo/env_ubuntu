@@ -13,5 +13,6 @@ sudo apt update -y &&
 sudo apt install nginx -y && 
 sudo apt install fail2ban -y && 
 sudo systemctl start nginx && 
+sudo update-rc.d -f nginx enable &&
 pm2 startup
 echo Done
