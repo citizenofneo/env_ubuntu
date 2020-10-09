@@ -24,3 +24,5 @@ sudo systemctl start nginx &&
 sudo update-rc.d -f nginx enable &&
 pm2 startup
 echo Done
+
+
