@@ -10,9 +10,9 @@ sudo npm i -g pm2 -y &&
 
 #rm apache
 sudo service apache2 stop -y &&
-sudo apt-get purge apache2 apache2-utils apache2.2-bin apache2-common -y &&
-sudo apt-get autoremove -y &&
-sudo rm -rf /etc/apache2 -y &&
+sudo apt-get purge apache2* -y
+sudo apt-get autoremove -y
+sudo rm -r -f /*/apache2* -y
 
 sudo apt install software-properties-common -y && 
 sudo apt-add-repository ppa:nginx/stable -y && 
