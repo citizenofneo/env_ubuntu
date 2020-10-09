@@ -11,7 +11,8 @@ sudo apt install software-properties-common -y &&
 sudo apt-add-repository ppa:nginx/stable -y && 
 sudo apt update -y && 
 sudo apt install nginx -y && 
-sudo apt install fail2ban -y && 
+sudo apt install fail2ban -y &&
+sudo rm /etc/nginx/sites-enabled/default &&
 sudo systemctl start nginx && 
 sudo update-rc.d -f nginx enable &&
 pm2 startup
