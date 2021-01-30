@@ -1,0 +1,6 @@
+sudo iptables -A INPUT -p tcp --dport 3006 -j DROP #drop port 3006
+sudo iptables -A INPUT -i lo -j ACCEPT #allow only local
+sudo iptables-save #save permanently and after reboot
+
+sudo iptables -L -n -v | grep -i DROP #check rules
+sudo iptables -F #reset all
