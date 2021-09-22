@@ -4,7 +4,7 @@ apt upgrade -y &&
 sudo apt install git -y && 
 sudo apt install curl -y && 
 sudo apt install policykit-1 -y && 
-sudo curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash - && 
+sudo curl -sL https://deb.nodesource.com/setup_14.x | sudo -E bash - && 
 sudo apt-get install -y nodejs -y && 
 sudo npm i -g pm2 -y && 
 
